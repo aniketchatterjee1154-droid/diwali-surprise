@@ -794,3 +794,73 @@ footer {
     transform: translateY(-30px);
   }
 }
+
+/* FULL-SCREEN LOVE REVEAL */
+
+.final-section {
+  isolation: isolate;
+  background: #260d1b;
+}
+
+.final-content,
+.love-reveal {
+  position: relative;
+  z-index: 2;
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.love-reveal {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+  background: radial-gradient(
+    ellipse at center,
+    #542039 0%,
+    #260d1b 75%
+  );
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.love-reveal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.final-content.hidden {
+  opacity: 0;
+  transform: scale(.95);
+  pointer-events: none;
+}
+
+.love-reveal-small {
+  color: #e7bd70;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.love-reveal h2 {
+  color: #ffe3a5;
+  font-size: clamp(48px, 11vw, 85px);
+  margin: 25px 0 5px;
+  text-shadow: 0 0 30px #e7bd70aa;
+}
+
+.love-reveal h3 {
+  color: #f3c879;
+  font-size: clamp(32px, 8vw, 55px);
+  margin: 5px 0 15px;
+}
+
+.love-reveal p {
+  color: #f5dfc7;
+  font-size: 14px;
+  line-height: 1.8;
+}
