@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#260d1b">
+  <meta name="description" content="A little Diwali surprise, made with love.">
+  <title>A Little Diwali Magic ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="particle-container" id="particleContainer"></div>
+
+  <header class="topbar">
+    <span>✦ A LITTLE DIWALI MAGIC ✦</span>
+    <button id="musicButton" class="music-button" aria-label="Play background music">
+      ♫ <span id="musicLabel">Play music</span>
+    </button>
+  </header>
+
+  <main>
+
+    <!-- INTRO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow">MADE WITH LOVE, JUST FOR YOU</div>
+
+        <div class="main-diya" aria-hidden="true">
+          <div class="flame"></div>
+          <div class="diya-bowl"></div>
+          <div class="diya-glow"></div>
+        </div>
+
+        <p class="hero-small">This Diwali, I have something for you...</p>
+
+        <h1>
+          Happy Diwali,<br>
+          <span id="herName">Shriya</span>
+          <span class="gold-heart">♡</span>
+        </h1>
+
+        <p class="hero-description">
+          A little celebration of lights, love and everything
+          that makes life beautiful.
+        </p>
+
+        <button class="gold-button" id="beginButton">
+          Open your surprise <span>→</span>
+        </button>
+
+        <div class="scroll-hint">SCROLL TO EXPLORE ↓</div>
+      </div>
+    </section>
+
+    <!-- DIYAS -->
+    <section class="section diya-section" id="diyas">
+      <div class="section-heading">
+        <span class="eyebrow">A LITTLE WISH FOR YOU</span>
+        <h2>Light up a wish ✨</h2>
+        <p>Tap each diya and make a wish. I hope all of yours come true.</p>
+      </div>
+
+      <div class="diya-grid">
+        <button class="wish-diya" data-wish="happiness">
+          <span class="wish-flame">🔥</span>
+          <span class="wish-bowl">🪔</span>
+          <span class="wish-label">Happiness</span>
+        </button>
+        <button class="wish-diya" data-wish="love">
+          <span class="wish-flame">🔥</span>
+          <span class="wish-bowl">🪔</span>
+          <span class="wish-label">Love</span>
+        </button>
+        <button class="wish-diya" data-wish="dreams">
+          <span class="wish-flame">🔥</span>
+          <span class="wish-bowl">🪔</span>
+          <span class="wish-label">Dreams</span>
+        </button>
+      </div>
+
+      <p id="wishMessage" class="wish-message" aria-live="polite">
+        Three little lights, and a million wishes for you.
+      </p>
+    </section>
+
+    <!-- LOVE LETTER -->
+    <section class="section letter-section" id="letter">
+      <div class="section-heading">
+        <span class="eyebrow">SOMETHING FROM MY HEART</span>
+        <h2>A letter for you</h2>
+        <p>Some things deserve more than just a WhatsApp message.</p>
+      </div>
+
+      
+<div class="letter-card" id="letterCard">
+
+  <div class="envelope" id="envelope">
+
+    <div class="envelope-back"></div>
+
+    <div class="letter-paper" id="letterContent" hidden>
+      <div class="letter-decoration">♡</div>
+
+      <p class="letter-intro">To my Thoni,</p>
+
+      <div class="letter-content">
+        <p>
+          This Diwali, I just want to remind you how special you are
+          to me. Among all the beautiful lights, celebrations and
+          little moments, you remain one of my favourite parts of life.
+        </p>
+
+        <p>
+          I hope your days are always filled with laughter, your
+          dreams find their way to you, and life gives you countless
+          reasons to smile.
+        </p>
+
+        <p>
+          Thank you for being you, for the memories we make, and
+          for making even ordinary days feel a little more special.
+        </p>
+
+        <p>
+          Here's to more adventures, silly conversations,
+          beautiful memories and a thousand more celebrations together.
+        </p>
+
+        <p class="letter-ending">
+          Happy Diwali, my chhotu ❤️
+        </p>
+
+        <p class="signature">With all my love ♡</p>
+      </div>
+    </div>
+
+    <div class="envelope-front"></div>
+    <div class="envelope-flap"></div>
+
+    <div class="envelope-seal" id="envelopeSeal">♡</div>
+
+  </div>
+
+  <button class="gold-button" id="letterButton">
+    Open my letter <span>♡</span>
+  </button>
+
+</div>
+
+    </section>
+
+    <!-- MEMORIES -->
+    <section class="section memories-section" id="memories">
+      <div class="section-heading">
+        <span class="eyebrow">MY FAVOURITE MOMENTS</span>
+        <h2>Us, in little moments</h2>
+        <p>A few memories that deserve a place here.</p>
+      </div>
+
+      <div class="photo-grid">
+        <figure class="photo-card">
+          <img src="assets/photo1.jpg" alt="Our special memory one" loading="lazy">
+          <figcaption>One of my favourite days ♡</figcaption>
+        </figure>
+
+        <figure class="photo-card">
+          <img src="assets/photo2.jpg" alt="Our special memory two" loading="lazy">
+          <figcaption>Just us being us</figcaption>
+        </figure>
+
+        <figure class="photo-card">
+          <img src="assets/photo3.jpg" alt="Our special memory three" loading="lazy">
+          <figcaption>A moment I'll always remember</figcaption>
+        </figure>
+
+        <figure class="photo-card">
+          <img src="assets/photo4.jpg" alt="Our special memory four" loading="lazy">
+          <figcaption>More memories to come ❤️</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SECRET SURPRISE -->
+    <section class="section secret-section" id="secret">
+      <div class="section-heading">
+        <span class="eyebrow">PSST... ONE MORE THING</span>
+        <h2>A little secret</h2>
+        <p>There's something else I wanted to tell you.</p>
+      </div>
+
+      <div class="secret-card">
+        <div class="secret-icon">🎁</div>
+        <h3 id="secretTitle">You found the secret!</h3>
+        <p id="secretMessage">
+          Some surprises are worth waiting for.
+        </p>
+        <button id="secretButton" class="gold-button">
+          Reveal your surprise ✨
+        </button>
+      </div>
+    </section>
+
+    <!-- FINAL -->
+    <section class="final-section" id="final">
+      <canvas id="fireworksCanvas" aria-hidden="true"></canvas>
+
+      <div class="final-content">
+        <div class="eyebrow">UNTIL OUR NEXT CELEBRATION</div>
+        <h2>May your world always<br>shine as brightly as you do.</h2>
+        <p>Happy Diwali, Shriya ❤️</p>
+        <div class="final-heart">♡</div>
+        <button id="fireworksButton" class="gold-button">
+          Make a little magic ✨
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Made with love, just for you. ♡
+  </footer>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
